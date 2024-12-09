@@ -3,34 +3,50 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Simple Calculator</title>
+  <title>Meme Calculator</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="calculator">
-    <input type="text" class="display" id="display" readonly>
-    <div class="buttons">
-      <button class="button" onclick="appendNumber('7')">7</button>
-      <button class="button" onclick="appendNumber('8')">8</button>
-      <button class="button" onclick="appendNumber('9')">9</button>
-      <button class="button" onclick="operate('/')">÷</button>
-      <button class="button" onclick="appendNumber('4')">4</button>
-      <button class="button" onclick="appendNumber('5')">5</button>
-      <button class="button" onclick="appendNumber('6')">6</button>
-      <button class="button" onclick="operate('*')">×</button>
-      <button class="button" onclick="appendNumber('1')">1</button>
-      <button class="button" onclick="appendNumber('2')">2</button>
-      <button class="button" onclick="appendNumber('3')">3</button>
-      <button class="button" onclick="operate('-')">−</button>
-      <button class="button" onclick="appendNumber('0')">0</button>
-      <button class="button" onclick="appendNumber('.')">.</button>
-      <button class="button" onclick="calculate()">=</button>
-      <button class="button" onclick="operate('+')">+</button>
-      <button class="button" onclick="clearDisplay()">C</button>
+
+    <div class="calculator-container">
+        <div class="title"> Meme Calculator</div>
+        <div class="subtitle">"Is it Math or Memes? Who knows!"</div>
+        <div class="calculator">
+          <input type="text" class="display" id="display" readonly>
+          <div id="meme-area"></div>
+          <div class="buttons">
+
+        <!-- Top Row: Clear and Backspace -->
+        <button class="button clear" onclick="clearDisplay()">C</button>
+        <button class="button backspace" onclick="backspace()">⌫</button>
+        <div></div><div></div>
+
+        <!-- Row 1 -->
+        <button class="button" onclick="appendNumber('7')">7</button>
+        <button class="button" onclick="appendNumber('8')">8</button>
+        <button class="button" onclick="appendNumber('9')">9</button>
+        <button class="button" onclick="operate('/')">÷</button>
+
+        <!-- Row 2 -->
+        <button class="button" onclick="appendNumber('4')">4</button>
+        <button class="button" onclick="appendNumber('5')">5</button>
+        <button class="button" onclick="appendNumber('6')">6</button>
+        <button class="button" onclick="operate('*')">×</button>
+
+        <!-- Row 3 -->
+        <button class="button" onclick="appendNumber('1')">1</button>
+        <button class="button" onclick="appendNumber('2')">2</button>
+        <button class="button" onclick="appendNumber('3')">3</button>
+        <button class="button" onclick="operate('-')">−</button>
+
+        <!-- Row 4 -->
+        <button class="button" onclick="appendNumber('0')">0</button>
+        <button class="button" onclick="appendNumber('.')">.</button>
+        <button class="button equals" onclick="calculate()">=</button>
+        <button class="button" onclick="operate('+')">+</button>
+      </div>
     </div>
   </div>
-
-
   <script src="script.js"></script>
 </body>
 </html>
