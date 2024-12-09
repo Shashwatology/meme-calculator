@@ -1,6 +1,6 @@
 # **Meme Calculator 🎉**
 
-This is a fun and interactive calculator featuring basic math operations with a twist\! After every calculation, it shows a random Samay Raina meme, making math a little more entertaining. 🧮 \+ 😂 \= Fun\!
+This is a fun and interactive calculator featuring basic math operations with a twist\! After every calculation, it shows a random  meme, making math a little more entertaining. 🧮 \+ 😂 \= Fun\!
 
 ## **Features ✨**
 
